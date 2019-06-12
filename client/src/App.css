@@ -1,0 +1,176 @@
+/* Colors */
+/*
+dark blue: #476A6F
+light blue: #258EA6
+dark green: #519E8A
+medium green: #7EB09B
+light green: #A3C4BC
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height:110vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #258EA6;
+}
+
+.form-wrapper {
+  width: 580px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px #555;
+  background-color: #ffffff;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Nunito',sans-serif;
+}
+
+label,
+input,
+.createAccount button{
+  font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+  margin:1rem 0;
+  font-family: 'Varela Round',sans-serif;
+  text-align: center;
+  width: 100%;
+  color: #111;
+  font-size:2.2rem;
+  font-weight: bold;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 0.25em;
+  color: #222;
+  font-weight: lighter;
+}
+
+input {
+  padding: 8px 10px;
+  border-radius: 3px;
+  outline: none;
+  border: 1.5px solid #cfcfcf;
+  font-size:1.2rem;
+  transition: all .4s ease;
+}
+
+input:focus{
+  border:1.5px solid rgb(29, 175, 233);
+  box-shadow: 0 0 8px rgba(81, 203, 238, 1);
+}
+
+input::placeholder {
+  font-size: 1em;
+  font-weight: lighter;
+  color: #999;
+}
+
+input.error {
+  border: 1.5px solid rgb(250, 35, 35);
+  box-shadow: 0 0 8px rgb(250, 35, 35);
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.75em;
+  display: relative;
+}
+
+.firstName {
+  margin-right: 1%;
+}
+
+.firstName,
+.lastName,
+.email,
+.password {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.firstName,
+.lastName {
+  width: 49%;
+}
+
+.email,
+.password {
+  width: 100%;
+}
+
+.createAccount {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.createAccount button {
+  background-color: #05AA57;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 0.3rem;
+  width: 100%;
+  margin-top: 1em;
+  padding: 14px 0px;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+
+.createAccount button:hover {
+  color: #05AA57;
+  background-color: #fff;
+  border: 3px solid #05AA57;
+}
+
+.btnVoltar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnVoltar button{
+  background-color: rgb(5, 123, 170);
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 0.3rem;
+  width: 100%;
+  margin-top: 1em;
+  padding: 14px 0px;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+
+.btnVoltar button:hover {
+  color: rgb(5, 123, 170);
+  background-color: #fff;
+  border: 3px solid rgb(5, 123, 170);
+}
+
+.createAccount small {
+  color: #999;
+}
